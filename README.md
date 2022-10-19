@@ -16,6 +16,6 @@ Vercel [Docu](https://parceljs.org/getting-started/webapp/)
 - [ ] Plugins GSAP Club Greensock
 - [x] Crear bit.ly/barcelona-css
 - [x] Seleccionar edificis
-- [ ] Bus turistic Recorregut
+- [x] FREE TOUR Recorregut
 
 Landing [CSS amagat a Barcelona](https://bit.ly/barcelona-css)
