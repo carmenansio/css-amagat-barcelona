@@ -6998,7 +6998,7 @@ _gsapTrial.default.registerPlugin(_ScrollTrigger.ScrollTrigger, _DrawSVGPlugin.D
 _gsapTrial.default.set([".container", "#line-svg"], {
   autoAlpha: 1
 });
-_gsapTrial.default.set(["#salmorejo-fill", "#tomaco-fill", "#garlic-fill", "#olive-fill", "#bread-fill", "#salt-fill", ".logo", "h1", ".start", ".border"], {
+_gsapTrial.default.set(["#salmorejo-fill", "#sagrada-fill", "#garlic-fill", "#olive-fill", "#bread-fill", "#salt-fill", ".logo", "h1", ".start", ".border"], {
   autoAlpha: 0
 });
 var linesBase = _gsapTrial.default.utils.toArray("#base path");
@@ -7063,14 +7063,14 @@ _ScrollTrigger.ScrollTrigger.create({
   //markers: {startColor: "yellow", endColor: "yellow"},
   fastScrollEnd: true,
   onEnter: function onEnter() {
-    return _gsapTrial.default.to(["#tomaco-fill"], {
+    return _gsapTrial.default.to(["#sagrada-fill"], {
       autoAlpha: 1,
       stagger: 0.01,
       duration: 1
     });
   },
   onEnterBack: function onEnterBack() {
-    return _gsapTrial.default.to(["#tomaco-fill"], {
+    return _gsapTrial.default.to(["#sagrada-fill"], {
       autoAlpha: 0,
       stagger: 0.01,
       duration: 1

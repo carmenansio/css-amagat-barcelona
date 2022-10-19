@@ -8,7 +8,7 @@ gsap.set([".container", "#line-svg"], { autoAlpha: 1 });
 gsap.set(
   [
     "#salmorejo-fill",
-    "#tomaco-fill",
+    "#sagrada-fill",
     "#garlic-fill",
     "#olive-fill",
     "#bread-fill",
@@ -16,7 +16,7 @@ gsap.set(
     ".logo",
     "h1",
     ".start",
-    ".border"
+    ".border",
   ],
   { autoAlpha: 0 }
 );
@@ -30,7 +30,7 @@ gsap.to([".logo", "h1", ".start", ".border"], {
   autoAlpha: 1,
   y: 0,
   stagger: 0.1,
-  ease: "power2.inOut"
+  ease: "power2.inOut",
   // repeat: -1,
   // duration: 1
 });
@@ -41,7 +41,7 @@ const texts = [
   ".text-3",
   ".text-4",
   ".text-5",
-  ".text-6"
+  ".text-6",
 ];
 texts.forEach((text) => {
   ScrollTrigger.create({
@@ -52,8 +52,8 @@ texts.forEach((text) => {
       autoAlpha: 0,
       y: 70,
       duration: 1,
-      ease: "sine.out"
-    })
+      ease: "sine.out",
+    }),
   });
 });
 
@@ -69,8 +69,8 @@ function draw(el) {
           path: el,
           align: el,
           alignOrigin: [0.5, 0.5],
-          autoRotate: true
-        }
+          autoRotate: true,
+        },
       },
       "<"
     )
@@ -86,18 +86,18 @@ ScrollTrigger.create({
   //markers: {startColor: "yellow", endColor: "yellow"},
   fastScrollEnd: true,
   onEnter: () =>
-    gsap.to(["#tomaco-fill"], {
+    gsap.to(["#sagrada-fill"], {
       autoAlpha: 1,
       stagger: 0.01,
-      duration: 1
+      duration: 1,
     }),
   onEnterBack: () =>
-    gsap.to(["#tomaco-fill"], {
+    gsap.to(["#sagrada-fill"], {
       autoAlpha: 0,
       stagger: 0.01,
-      duration: 1
+      duration: 1,
     }),
-  animation: draw("#line-1")
+  animation: draw("#line-1"),
 });
 
 ScrollTrigger.create({
@@ -111,15 +111,15 @@ ScrollTrigger.create({
     gsap.to(["#garlic-fill"], {
       autoAlpha: 1,
       stagger: 0.01,
-      duration: 1
+      duration: 1,
     }),
   onEnterBack: () =>
     gsap.to(["#garlic-fill"], {
       autoAlpha: 0,
       stagger: 0.01,
-      duration: 1
+      duration: 1,
     }),
-  animation: draw("#line-2")
+  animation: draw("#line-2"),
 });
 
 ScrollTrigger.create({
@@ -129,7 +129,7 @@ ScrollTrigger.create({
   end: "bottom center",
   // markers: {startColor: "blue", endColor: "blue"},
   fastScrollEnd: true,
-  animation: draw("#line-3")
+  animation: draw("#line-3"),
 });
 ScrollTrigger.create({
   trigger: "#base #line-4",
@@ -142,15 +142,15 @@ ScrollTrigger.create({
     gsap.to(["#bread-fill"], {
       autoAlpha: 1,
       stagger: 0.01,
-      duration: 1
+      duration: 1,
     }),
   onEnterBack: () =>
     gsap.to(["#bread-fill"], {
       autoAlpha: 0,
       stagger: 0.01,
-      duration: 1
+      duration: 1,
     }),
-  animation: draw("#line-4")
+  animation: draw("#line-4"),
 });
 ScrollTrigger.create({
   trigger: "#base #line-5",
@@ -159,7 +159,7 @@ ScrollTrigger.create({
   end: "bottom-=10% center",
   // markers: {startColor: "red", endColor: "red"},
   fastScrollEnd: true,
-  animation: draw("#line-5")
+  animation: draw("#line-5"),
 });
 ScrollTrigger.create({
   trigger: "#base #line-6",
@@ -171,16 +171,16 @@ ScrollTrigger.create({
     gsap.to(["#olive-fill"], {
       autoAlpha: 1,
       stagger: 0.01,
-      duration: 1
+      duration: 1,
     }),
   onEnterBack: () =>
     gsap.to(["#olive-fill"], {
       autoAlpha: 0,
       stagger: 0.01,
-      duration: 1
+      duration: 1,
     }),
   fastScrollEnd: true,
-  animation: draw("#line-6")
+  animation: draw("#line-6"),
 });
 ScrollTrigger.create({
   trigger: "#base #line-7",
@@ -189,7 +189,7 @@ ScrollTrigger.create({
   end: "bottom center",
   // markers: {startColor: "green", endColor: "green"},
   fastScrollEnd: true,
-  animation: draw("#line-7")
+  animation: draw("#line-7"),
 });
 ScrollTrigger.create({
   trigger: "#base #line-8",
@@ -200,7 +200,7 @@ ScrollTrigger.create({
   onEnter: () => gsap.to("#salt-fill", { autoAlpha: 1, duration: 1 }),
   fastScrollEnd: true,
   onEnterBack: () => gsap.to("#salt-fill", { autoAlpha: 0, duration: 2 }),
-  animation: draw("#line-8")
+  animation: draw("#line-8"),
 });
 
 ScrollTrigger.create({
@@ -212,5 +212,5 @@ ScrollTrigger.create({
   onEnter: () => gsap.to("#salmorejo-fill", { autoAlpha: 1, duration: 1 }),
   fastScrollEnd: true,
   onEnterBack: () => gsap.to("#salmorejo-fill", { autoAlpha: 0, duration: 2 }),
-  animation: draw("#line-9")
+  animation: draw("#line-9"),
 });
