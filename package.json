@@ -1,0 +1,22 @@
+{
+  "name": "css-amagat-barcelona",
+  "version": "1.0.0",
+  "description": "Exemple per la crafters bcn 2022",
+  "main": "index.html",
+  "license": "(MIT OR Apache-2.0)",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html"
+  },
+  "dependencies": {
+    "gsap-trial": "3.10.2",
+    "parcel-bundler": "^1.6.1"
+  },
+  "devDependencies": {
+    "@babel/core": "7.2.0"
+  },
+  "resolutions": {
+    "@babel/preset-env": "7.13.8"
+  },
+  "keywords": []
+}
