@@ -109,7 +109,7 @@ h1 {
 
 .text-1 {
   position: absolute;
-  top: 5%;
+  top: 8%;
   right: 10%;
   text-align: right;
   margin: 0;
@@ -125,7 +125,7 @@ h1 {
 
 .text-3 {
   position: absolute;
-  top: calc((0.2 * 35%) + 35%);
+  top: calc((0.2 * 35%) + 45%);
   right: 10%;
   text-align: center;
 }
@@ -133,7 +133,7 @@ h1 {
 .text-4 {
   position: absolute;
   top: calc((0.2 * 40%) + 52%);
-  right: 0;
+  right: 15%;
   text-align: right;
 }
 
@@ -182,20 +182,21 @@ h1 {
 
   .text-4 {
     top: calc((0.2 * 40%) + 52%);
-    right: 0;
+    left: 60%;
     text-align: right;
   }
 
   .text-5 {
     top: calc((0.2 * 50%) + 68%);
+    left: 60%;
     text-align: left;
     margin: 0;
     padding-left: 1rem;
   }
 
   .text-6 {
-    top: calc((0.2 * 50%) + 92%);
-    left: 50%;
+    top: calc((0.2 * 50%) + 88%);
+    left: 60%;
     text-align: center;
     margin: 0;
     padding-left: 1rem;
