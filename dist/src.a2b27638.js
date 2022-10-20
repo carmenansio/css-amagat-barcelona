@@ -6998,7 +6998,7 @@ _gsapTrial.default.registerPlugin(_ScrollTrigger.ScrollTrigger, _DrawSVGPlugin.D
 _gsapTrial.default.set([".container", "#line-svg"], {
   autoAlpha: 1
 });
-_gsapTrial.default.set(["#salmorejo-fill", "#sagrada-fill", "#garlic-fill", "#olive-fill", "#bread-fill", "#salt-fill", ".logo", "h1", ".start", ".border"], {
+_gsapTrial.default.set(["#catedral-fill", "#pirulo-fill", "#arc-fill", "#wella-fill", "#sagrada-fill", ".logo", "h1", ".start", ".border"], {
   autoAlpha: 0
 });
 var linesBase = _gsapTrial.default.utils.toArray("#base path");
@@ -7086,14 +7086,14 @@ _ScrollTrigger.ScrollTrigger.create({
   // markers: {startColor: "red", endColor: "red"},
   fastScrollEnd: true,
   onEnter: function onEnter() {
-    return _gsapTrial.default.to(["#garlic-fill"], {
+    return _gsapTrial.default.to(["#wella-fill"], {
       autoAlpha: 1,
       stagger: 0.01,
       duration: 1
     });
   },
   onEnterBack: function onEnterBack() {
-    return _gsapTrial.default.to(["#garlic-fill"], {
+    return _gsapTrial.default.to(["#wella-fill"], {
       autoAlpha: 0,
       stagger: 0.01,
       duration: 1
@@ -7118,14 +7118,14 @@ _ScrollTrigger.ScrollTrigger.create({
   // markers: {startColor: "green", endColor: "green"},
   fastScrollEnd: true,
   onEnter: function onEnter() {
-    return _gsapTrial.default.to(["#bread-fill"], {
+    return _gsapTrial.default.to(["#arc-fill"], {
       autoAlpha: 1,
       stagger: 0.01,
       duration: 1
     });
   },
   onEnterBack: function onEnterBack() {
-    return _gsapTrial.default.to(["#bread-fill"], {
+    return _gsapTrial.default.to(["#arc-fill"], {
       autoAlpha: 0,
       stagger: 0.01,
       duration: 1
@@ -7149,14 +7149,14 @@ _ScrollTrigger.ScrollTrigger.create({
   end: "bottom center",
   // markers: {startColor: "blue", endColor: "blue"},
   onEnter: function onEnter() {
-    return _gsapTrial.default.to(["#olive-fill"], {
+    return _gsapTrial.default.to(["#pirulo-fill"], {
       autoAlpha: 1,
       stagger: 0.01,
       duration: 1
     });
   },
   onEnterBack: function onEnterBack() {
-    return _gsapTrial.default.to(["#olive-fill"], {
+    return _gsapTrial.default.to(["#pirulo-fill"], {
       autoAlpha: 0,
       stagger: 0.01,
       duration: 1
@@ -7181,14 +7181,14 @@ _ScrollTrigger.ScrollTrigger.create({
   end: "bottom center",
   // markers: {startColor: "green", endColor: "green"},
   onEnter: function onEnter() {
-    return _gsapTrial.default.to("#salt-fill", {
+    return _gsapTrial.default.to("#pirulo-fill", {
       autoAlpha: 1,
       duration: 1
     });
   },
   fastScrollEnd: true,
   onEnterBack: function onEnterBack() {
-    return _gsapTrial.default.to("#salt-fill", {
+    return _gsapTrial.default.to("#pirulo-fill", {
       autoAlpha: 0,
       duration: 2
     });
@@ -7202,14 +7202,14 @@ _ScrollTrigger.ScrollTrigger.create({
   end: "bottom center",
   // markers: {startColor: "green", endColor: "green"},
   onEnter: function onEnter() {
-    return _gsapTrial.default.to("#salmorejo-fill", {
+    return _gsapTrial.default.to("#catedral-fill", {
       autoAlpha: 1,
       duration: 1
     });
   },
   fastScrollEnd: true,
   onEnterBack: function onEnterBack() {
-    return _gsapTrial.default.to("#salmorejo-fill", {
+    return _gsapTrial.default.to("#catedral-fill", {
       autoAlpha: 0,
       duration: 2
     });

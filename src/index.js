@@ -7,12 +7,11 @@ gsap.registerPlugin(ScrollTrigger, DrawSVGPlugin, MotionPathPlugin);
 gsap.set([".container", "#line-svg"], { autoAlpha: 1 });
 gsap.set(
   [
-    "#salmorejo-fill",
+    "#catedral-fill",
+    "#pirulo-fill",
+    "#arc-fill",
+    "#wella-fill",
     "#sagrada-fill",
-    "#garlic-fill",
-    "#olive-fill",
-    "#bread-fill",
-    "#salt-fill",
     ".logo",
     "h1",
     ".start",
@@ -108,13 +107,13 @@ ScrollTrigger.create({
   // markers: {startColor: "red", endColor: "red"},
   fastScrollEnd: true,
   onEnter: () =>
-    gsap.to(["#garlic-fill"], {
+    gsap.to(["#wella-fill"], {
       autoAlpha: 1,
       stagger: 0.01,
       duration: 1,
     }),
   onEnterBack: () =>
-    gsap.to(["#garlic-fill"], {
+    gsap.to(["#wella-fill"], {
       autoAlpha: 0,
       stagger: 0.01,
       duration: 1,
@@ -139,13 +138,13 @@ ScrollTrigger.create({
   // markers: {startColor: "green", endColor: "green"},
   fastScrollEnd: true,
   onEnter: () =>
-    gsap.to(["#bread-fill"], {
+    gsap.to(["#arc-fill"], {
       autoAlpha: 1,
       stagger: 0.01,
       duration: 1,
     }),
   onEnterBack: () =>
-    gsap.to(["#bread-fill"], {
+    gsap.to(["#arc-fill"], {
       autoAlpha: 0,
       stagger: 0.01,
       duration: 1,
@@ -168,13 +167,13 @@ ScrollTrigger.create({
   end: "bottom center",
   // markers: {startColor: "blue", endColor: "blue"},
   onEnter: () =>
-    gsap.to(["#olive-fill"], {
+    gsap.to(["#pirulo-fill"], {
       autoAlpha: 1,
       stagger: 0.01,
       duration: 1,
     }),
   onEnterBack: () =>
-    gsap.to(["#olive-fill"], {
+    gsap.to(["#pirulo-fill"], {
       autoAlpha: 0,
       stagger: 0.01,
       duration: 1,
@@ -197,9 +196,9 @@ ScrollTrigger.create({
   start: "top+=10% 50%",
   end: "bottom center",
   // markers: {startColor: "green", endColor: "green"},
-  onEnter: () => gsap.to("#salt-fill", { autoAlpha: 1, duration: 1 }),
+  onEnter: () => gsap.to("#pirulo-fill", { autoAlpha: 1, duration: 1 }),
   fastScrollEnd: true,
-  onEnterBack: () => gsap.to("#salt-fill", { autoAlpha: 0, duration: 2 }),
+  onEnterBack: () => gsap.to("#pirulo-fill", { autoAlpha: 0, duration: 2 }),
   animation: draw("#line-8"),
 });
 
@@ -209,8 +208,8 @@ ScrollTrigger.create({
   start: "top+=10% 50%",
   end: "bottom center",
   // markers: {startColor: "green", endColor: "green"},
-  onEnter: () => gsap.to("#salmorejo-fill", { autoAlpha: 1, duration: 1 }),
+  onEnter: () => gsap.to("#catedral-fill", { autoAlpha: 1, duration: 1 }),
   fastScrollEnd: true,
-  onEnterBack: () => gsap.to("#salmorejo-fill", { autoAlpha: 0, duration: 2 }),
+  onEnterBack: () => gsap.to("#catedral-fill", { autoAlpha: 0, duration: 2 }),
   animation: draw("#line-9"),
 });
