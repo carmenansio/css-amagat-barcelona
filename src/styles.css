@@ -173,6 +173,10 @@ h1,
   opacity: 0;
 }
 
+.logo {
+  width: 100px;
+}
+
 h1 {
   padding: 0;
   margin: 0;
@@ -184,6 +188,7 @@ h1 bold {
 
 .text.start {
   font-family: moderat-regular;
+  margin: 0;
 }
 
 .text-1 {
