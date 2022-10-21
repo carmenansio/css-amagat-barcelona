@@ -249,11 +249,11 @@ h1 bold {
       5rem;
   }
   .max-content {
-    width: 29ch;
+    width: 24ch;
   }
   .text-1 {
-    top: 12%;
-    left: 55%;
+    top: 11%;
+    left: 38%;
     text-align: right;
     margin: 0;
     padding-left: 1rem;
@@ -261,9 +261,9 @@ h1 bold {
 
   .text-2 {
     top: calc(
-      (0.2 * 33%) + 26%
+      (0.2 * 33%) + 30%
     );
-    right: 20%;
+    left: -50%;
   }
 
   .text-3 {
@@ -276,7 +276,7 @@ h1 bold {
 
   .text-4 {
     top: calc(
-      (0.2 * 40%) + 52%
+      (0.2 * 40%) + 50%
     );
     left: 60%;
     text-align: right;
@@ -284,7 +284,7 @@ h1 bold {
 
   .text-5 {
     top: calc(
-      (0.2 * 50%) + 68%
+      (0.2 * 50%) + 65%
     );
     left: 60%;
     text-align: left;
@@ -305,8 +305,11 @@ h1 bold {
 
 .social-net {
   display: flex;
-  justify-content: flex-start;
-  font-size: 1rem;
+  font-size: 0.4rem;
+  align-items: stretch;
+  align-content: center;
+  flex-wrap: wrap;
+  min-height: 620px;
 }
 
 .social-net a {
