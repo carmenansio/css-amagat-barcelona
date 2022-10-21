@@ -88,13 +88,13 @@ ScrollTrigger.create({
     gsap.to(["#sagrada-fill"], {
       autoAlpha: 1,
       stagger: 0.01,
-      duration: 1,
+      duration: 2,
     }),
   onEnterBack: () =>
     gsap.to(["#sagrada-fill"], {
       autoAlpha: 0,
       stagger: 0.01,
-      duration: 1,
+      duration: 2,
     }),
   animation: draw("#line-1"),
 });

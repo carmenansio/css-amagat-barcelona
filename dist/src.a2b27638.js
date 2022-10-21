@@ -7066,14 +7066,14 @@ _ScrollTrigger.ScrollTrigger.create({
     return _gsapTrial.default.to(["#sagrada-fill"], {
       autoAlpha: 1,
       stagger: 0.01,
-      duration: 1
+      duration: 2
     });
   },
   onEnterBack: function onEnterBack() {
     return _gsapTrial.default.to(["#sagrada-fill"], {
       autoAlpha: 0,
       stagger: 0.01,
-      duration: 1
+      duration: 2
     });
   },
   animation: draw("#line-1")
@@ -7241,7 +7241,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "40961" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "36327" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
