@@ -6995,40 +6995,40 @@ var _DrawSVGPlugin = require("gsap-trial/DrawSVGPlugin");
 var _MotionPathPlugin = require("gsap-trial/MotionPathPlugin");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 _gsapTrial.default.registerPlugin(_ScrollTrigger.ScrollTrigger, _DrawSVGPlugin.DrawSVGPlugin, _MotionPathPlugin.MotionPathPlugin);
-_gsapTrial.default.set([".container", "#line-svg"], {
+_gsapTrial.default.set(['.container', '#line-svg'], {
   autoAlpha: 1
 });
-_gsapTrial.default.set(["#catedral-fill", "#pirulo-fill", "#arc-fill", "#wella-fill", "#sagrada-fill", ".logo", "h1", ".start", ".border"], {
+_gsapTrial.default.set(['#catedral-fill', '#pirulo-fill', '#arc-fill', '#wella-fill', '#sagrada-fill', '.logo', 'h1', '.start', '.border'], {
   autoAlpha: 0
 });
-var linesBase = _gsapTrial.default.utils.toArray("#base path");
-var linesrunning = _gsapTrial.default.utils.toArray("#running path");
+var linesBase = _gsapTrial.default.utils.toArray('#base path');
+var linesrunning = _gsapTrial.default.utils.toArray('#running path');
 _gsapTrial.default.set([linesBase, linesrunning], {
-  drawSVG: "0% 0%"
+  drawSVG: '0% 0%'
 });
-_gsapTrial.default.set([".logo", "h1", ".start"], {
+_gsapTrial.default.set(['.logo', 'h1', '.start'], {
   y: 40
 });
-_gsapTrial.default.to([".logo", "h1", ".start", ".border"], {
+_gsapTrial.default.to(['.logo', 'h1', '.start', '.border'], {
   autoAlpha: 1,
   y: 0,
   stagger: 0.1,
-  ease: "power2.inOut"
+  ease: 'power2.inOut'
   // repeat: -1,
   // duration: 1
 });
 
-var texts = [".text-1", ".text-2", ".text-3", ".text-4", ".text-5", ".text-6"];
+var texts = ['.text-1', '.text-2', '.text-3', '.text-4', '.text-5', '.text-6'];
 texts.forEach(function (text) {
   _ScrollTrigger.ScrollTrigger.create({
     trigger: text,
-    start: "top 50%",
-    toggleActions: "play reverse play reverse",
+    start: 'top 50%',
+    toggleActions: 'play reverse play reverse',
     animation: _gsapTrial.default.from(text, {
       autoAlpha: 0,
       y: 70,
       duration: 1,
-      ease: "sine.out"
+      ease: 'sine.out'
     })
   });
 });
@@ -7040,9 +7040,9 @@ function draw(el) {
     drawSVG: true,
     duration: 0.5
   }).to("".concat(el, "-2"), {
-    drawSVG: "100% 100%",
+    drawSVG: '100% 100%',
     duration: 0.5
-  }, "<").to(".line-circle", {
+  }, '<').to('.line-circle', {
     duration: 0.5,
     motionPath: {
       path: el,
@@ -7050,265 +7050,215 @@ function draw(el) {
       alignOrigin: [0.5, 0.5],
       autoRotate: true
     }
-  }, "<").set("".concat(el, "-2"), {
+  }, '<').set("".concat(el, "-2"), {
     autoAlpha: 0
   });
   return tl;
 }
 _ScrollTrigger.ScrollTrigger.create({
-  trigger: "#base #line-1",
+  trigger: '#base #line-1',
   scrub: true,
-  start: "top 50%",
-  end: "bottom center",
+  start: 'top 50%',
+  end: 'bottom center',
   //markers: {startColor: "yellow", endColor: "yellow"},
   fastScrollEnd: true,
   onEnter: function onEnter() {
-    return _gsapTrial.default.to(["#sagrada-fill"], {
+    return _gsapTrial.default.to(['#sagrada-fill'], {
       autoAlpha: 1,
       stagger: 0.01,
       duration: 2
     });
   },
   onEnterBack: function onEnterBack() {
-    return _gsapTrial.default.to(["#sagrada-fill"], {
+    return _gsapTrial.default.to(['#sagrada-fill'], {
       autoAlpha: 0,
       stagger: 0.01,
       duration: 2
     });
   },
-  animation: draw("#line-1")
+  animation: draw('#line-1')
 });
 _ScrollTrigger.ScrollTrigger.create({
-  trigger: "#base #line-2",
+  trigger: '#base #line-2',
   scrub: true,
-  start: "top+=42.5% 50%",
-  end: "bottom center",
+  start: 'top+=42.5% 50%',
+  end: 'bottom center',
   // markers: {startColor: "red", endColor: "red"},
   fastScrollEnd: true,
   onEnter: function onEnter() {
-    return _gsapTrial.default.to(["#wella-fill"], {
+    return _gsapTrial.default.to(['#wella-fill'], {
       autoAlpha: 1,
       stagger: 0.01,
       duration: 1
     });
   },
   onEnterBack: function onEnterBack() {
-    return _gsapTrial.default.to(["#wella-fill"], {
+    return _gsapTrial.default.to(['#wella-fill'], {
       autoAlpha: 0,
       stagger: 0.01,
       duration: 1
     });
   },
-  animation: draw("#line-2")
+  animation: draw('#line-2')
 });
 _ScrollTrigger.ScrollTrigger.create({
-  trigger: "#base #line-3",
+  trigger: '#base #line-3',
   scrub: true,
-  start: "top+=19.3% 50%",
-  end: "bottom center",
+  start: 'top+=19.3% 50%',
+  end: 'bottom center',
   // markers: {startColor: "blue", endColor: "blue"},
   fastScrollEnd: true,
-  animation: draw("#line-3")
+  animation: draw('#line-3')
 });
 _ScrollTrigger.ScrollTrigger.create({
-  trigger: "#base #line-4",
+  trigger: '#base #line-4',
   scrub: true,
-  start: "top+=42.5% 50%",
-  end: "bottom center",
+  start: 'top+=42.5% 50%',
+  end: 'bottom center',
   // markers: {startColor: "green", endColor: "green"},
   fastScrollEnd: true,
   onEnter: function onEnter() {
-    return _gsapTrial.default.to(["#arc-fill"], {
+    return _gsapTrial.default.to(['#arc-fill'], {
       autoAlpha: 1,
       stagger: 0.01,
       duration: 1
     });
   },
   onEnterBack: function onEnterBack() {
-    return _gsapTrial.default.to(["#arc-fill"], {
+    return _gsapTrial.default.to(['#arc-fill'], {
       autoAlpha: 0,
       stagger: 0.01,
       duration: 1
     });
   },
-  animation: draw("#line-4")
+  animation: draw('#line-4')
 });
 _ScrollTrigger.ScrollTrigger.create({
-  trigger: "#base #line-5",
+  trigger: '#base #line-5',
   scrub: true,
-  start: "top 50%",
-  end: "bottom-=10% center",
+  start: 'top 50%',
+  end: 'bottom-=10% center',
   // markers: {startColor: "red", endColor: "red"},
   fastScrollEnd: true,
-  animation: draw("#line-5")
+  animation: draw('#line-5')
 });
 _ScrollTrigger.ScrollTrigger.create({
-  trigger: "#base #line-6",
+  trigger: '#base #line-6',
   scrub: true,
-  start: "top+=42% 50%",
-  end: "bottom center",
+  start: 'top+=42% 50%',
+  end: 'bottom center',
   // markers: {startColor: "blue", endColor: "blue"},
   onEnter: function onEnter() {
-    return _gsapTrial.default.to(["#pirulo-fill"], {
+    return _gsapTrial.default.to(['#pirulo-fill'], {
       autoAlpha: 1,
       stagger: 0.01,
       duration: 1
     });
   },
   onEnterBack: function onEnterBack() {
-    return _gsapTrial.default.to(["#pirulo-fill"], {
+    return _gsapTrial.default.to(['#pirulo-fill'], {
       autoAlpha: 0,
       stagger: 0.01,
       duration: 1
     });
   },
   fastScrollEnd: true,
-  animation: draw("#line-6")
+  animation: draw('#line-6')
 });
 _ScrollTrigger.ScrollTrigger.create({
-  trigger: "#base #line-7",
+  trigger: '#base #line-7',
   scrub: true,
-  start: "top+=10% 50%",
-  end: "bottom center",
+  start: 'top+=10% 50%',
+  end: 'bottom center',
   // markers: {startColor: "green", endColor: "green"},
   fastScrollEnd: true,
-  animation: draw("#line-7")
+  animation: draw('#line-7')
 });
 _ScrollTrigger.ScrollTrigger.create({
-  trigger: "#base #line-8",
+  trigger: '#base #line-8',
   scrub: true,
-  start: "top+=10% 50%",
-  end: "bottom center",
+  start: 'top+=10% 50%',
+  end: 'bottom center',
   // markers: {startColor: "green", endColor: "green"},
   onEnter: function onEnter() {
-    return _gsapTrial.default.to("#pirulo-fill", {
+    return _gsapTrial.default.to('#pirulo-fill', {
       autoAlpha: 1,
       duration: 1
     });
   },
   fastScrollEnd: true,
   onEnterBack: function onEnterBack() {
-    return _gsapTrial.default.to("#pirulo-fill", {
+    return _gsapTrial.default.to('#pirulo-fill', {
       autoAlpha: 0,
       duration: 2
     });
   },
-  animation: draw("#line-8")
+  animation: draw('#line-8')
 });
 _ScrollTrigger.ScrollTrigger.create({
-  trigger: "#base #line-9",
+  trigger: '#base #line-8',
   scrub: true,
-  start: "top+=10% 50%",
-  end: "bottom center",
+  start: 'top+=10% 50%',
+  end: 'bottom center',
   // markers: {startColor: "green", endColor: "green"},
   onEnter: function onEnter() {
-    return _gsapTrial.default.to("#catedral-fill", {
+    return _gsapTrial.default.to('#catedral-fill', {
       autoAlpha: 1,
       duration: 1
     });
   },
   fastScrollEnd: true,
   onEnterBack: function onEnterBack() {
-    return _gsapTrial.default.to("#catedral-fill", {
+    return _gsapTrial.default.to('#catedral-fill', {
       autoAlpha: 0,
       duration: 2
     });
   },
-  animation: draw("#line-9")
+  animation: draw('#line-8')
 });
 },{"gsap-trial":"node_modules/gsap-trial/index.js","gsap-trial/ScrollTrigger":"node_modules/gsap-trial/ScrollTrigger.js","gsap-trial/DrawSVGPlugin":"node_modules/gsap-trial/DrawSVGPlugin.js","gsap-trial/MotionPathPlugin":"node_modules/gsap-trial/MotionPathPlugin.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
-var global = arguments[3];
-var OVERLAY_ID = '__parcel__error__overlay__';
+
+var global = (1, eval)('this');
 var OldModule = module.bundle.Module;
-function Module(moduleName) {
-  OldModule.call(this, moduleName);
+function Module() {
+  OldModule.call(this);
   this.hot = {
-    data: module.bundle.hotData,
-    _acceptCallbacks: [],
-    _disposeCallbacks: [],
     accept: function (fn) {
-      this._acceptCallbacks.push(fn || function () {});
+      this._acceptCallback = fn || function () {};
     },
     dispose: function (fn) {
-      this._disposeCallbacks.push(fn);
+      this._disposeCallback = fn;
     }
   };
-  module.bundle.hotData = null;
 }
 module.bundle.Module = Module;
-var checkedAssets, assetsToAccept;
-var parent = module.bundle.parent;
-if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
-  var hostname = "" || location.hostname;
-  var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "36327" + '/');
+if (!module.bundle.parent && typeof WebSocket !== 'undefined') {
+  var ws = new WebSocket('ws://localhost:{{HMR_PORT}}/');
   ws.onmessage = function (event) {
-    checkedAssets = {};
-    assetsToAccept = [];
     var data = JSON.parse(event.data);
     if (data.type === 'update') {
-      var handled = false;
+      data.assets.forEach(function (asset) {
+        hmrApply(global.require, asset);
+      });
       data.assets.forEach(function (asset) {
         if (!asset.isNew) {
-          var didAccept = hmrAcceptCheck(global.parcelRequire, asset.id);
-          if (didAccept) {
-            handled = true;
-          }
+          hmrAccept(global.require, asset.id);
         }
       });
-
-      // Enable HMR for CSS by default.
-      handled = handled || data.assets.every(function (asset) {
-        return asset.type === 'css' && asset.generated.js;
-      });
-      if (handled) {
-        console.clear();
-        data.assets.forEach(function (asset) {
-          hmrApply(global.parcelRequire, asset);
-        });
-        assetsToAccept.forEach(function (v) {
-          hmrAcceptRun(v[0], v[1]);
-        });
-      } else if (location.reload) {
-        // `location` global exists in a web worker context but lacks `.reload()` function.
-        location.reload();
-      }
     }
     if (data.type === 'reload') {
       ws.close();
       ws.onclose = function () {
-        location.reload();
+        window.location.reload();
       };
     }
     if (data.type === 'error-resolved') {
       console.log('[parcel] ✨ Error resolved');
-      removeErrorOverlay();
     }
     if (data.type === 'error') {
-      console.error('[parcel] 🚨  ' + data.error.message + '\n' + data.error.stack);
-      removeErrorOverlay();
-      var overlay = createErrorOverlay(data);
-      document.body.appendChild(overlay);
+      console.error('[parcel] 🚨  ' + data.error.message + '\n' + 'data.error.stack');
     }
   };
-}
-function removeErrorOverlay() {
-  var overlay = document.getElementById(OVERLAY_ID);
-  if (overlay) {
-    overlay.remove();
-  }
-}
-function createErrorOverlay(data) {
-  var overlay = document.createElement('div');
-  overlay.id = OVERLAY_ID;
-
-  // html encode message and stack trace
-  var message = document.createElement('div');
-  var stackTrace = document.createElement('pre');
-  message.innerText = data.error.message;
-  stackTrace.innerText = data.error.stack;
-  overlay.innerHTML = '<div style="background: black; font-size: 16px; color: white; position: fixed; height: 100%; width: 100%; top: 0px; left: 0px; padding: 30px; opacity: 0.85; font-family: Menlo, Consolas, monospace; z-index: 9999;">' + '<span style="background: red; padding: 2px 4px; border-radius: 2px;">ERROR</span>' + '<span style="top: 2px; margin-left: 5px; position: relative;">🚨</span>' + '<div style="font-size: 18px; font-weight: bold; margin-top: 20px;">' + message.innerHTML + '</div>' + '<pre>' + stackTrace.innerHTML + '</pre>' + '</div>';
-  return overlay;
 }
 function getParents(bundle, id) {
   var modules = bundle.modules;
@@ -7321,7 +7271,7 @@ function getParents(bundle, id) {
     for (d in modules[k][1]) {
       dep = modules[k][1][d];
       if (dep === id || Array.isArray(dep) && dep[dep.length - 1] === id) {
-        parents.push(k);
+        parents.push(+k);
       }
     }
   }
@@ -7343,47 +7293,28 @@ function hmrApply(bundle, asset) {
     hmrApply(bundle.parent, asset);
   }
 }
-function hmrAcceptCheck(bundle, id) {
+function hmrAccept(bundle, id) {
   var modules = bundle.modules;
   if (!modules) {
     return;
   }
   if (!modules[id] && bundle.parent) {
-    return hmrAcceptCheck(bundle.parent, id);
+    return hmrAccept(bundle.parent, id);
   }
-  if (checkedAssets[id]) {
-    return;
-  }
-  checkedAssets[id] = true;
   var cached = bundle.cache[id];
-  assetsToAccept.push([bundle, id]);
-  if (cached && cached.hot && cached.hot._acceptCallbacks.length) {
-    return true;
-  }
-  return getParents(global.parcelRequire, id).some(function (id) {
-    return hmrAcceptCheck(global.parcelRequire, id);
-  });
-}
-function hmrAcceptRun(bundle, id) {
-  var cached = bundle.cache[id];
-  bundle.hotData = {};
-  if (cached) {
-    cached.hot.data = bundle.hotData;
-  }
-  if (cached && cached.hot && cached.hot._disposeCallbacks.length) {
-    cached.hot._disposeCallbacks.forEach(function (cb) {
-      cb(bundle.hotData);
-    });
+  if (cached && cached.hot._disposeCallback) {
+    cached.hot._disposeCallback();
   }
   delete bundle.cache[id];
   bundle(id);
   cached = bundle.cache[id];
-  if (cached && cached.hot && cached.hot._acceptCallbacks.length) {
-    cached.hot._acceptCallbacks.forEach(function (cb) {
-      cb();
-    });
+  if (cached && cached.hot && cached.hot._acceptCallback) {
+    cached.hot._acceptCallback();
     return true;
   }
+  return getParents(global.require, id).some(function (id) {
+    return hmrAccept(global.require, id);
+  });
 }
 },{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js","src/index.js"], null)
 //# sourceMappingURL=/src.a2b27638.js.map
