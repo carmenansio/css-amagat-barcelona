@@ -310,7 +310,7 @@ h1 bold {
 
 .social-net {
   display: flex;
-  font-size: 0.4rem;
+  font-size: 1rem;
   align-items: stretch;
   align-content: center;
   flex-wrap: wrap;
