@@ -221,7 +221,7 @@ h1 bold {
 .text-4 {
   position: absolute;
   top: calc(
-    (0.2 * 40%) + 52%
+    (0.2 * 40%) + 56%
   );
   right: 15%;
   text-align: right;
@@ -242,7 +242,7 @@ h1 bold {
   top: calc(
     (0.2 * 50%) + 92%
   );
-  left: 20%;
+  left: 30%;
   text-align: center;
   margin: 0;
   padding-left: 1rem;
