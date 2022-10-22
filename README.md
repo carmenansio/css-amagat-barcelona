@@ -8,8 +8,8 @@ Sandbox [Deploy](https://2xtqvx.csb.app/)
 Vercel [Docu](https://parceljs.org/getting-started/webapp/)
 
 ### TO DO
-- [ ] Propietat CSS i edificis
-- [ ] Afegir la webfont Moderat
+- [x] Propietat CSS i edificis
+- [x] Afegir la webfont Moderat
 - [x] Crear bit.ly/barcelona-css
 - [x] Seleccionar edificis
 - [x] Bus turistic Recorregut Roadmap sessió
