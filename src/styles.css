@@ -257,7 +257,7 @@ h1 bold {
     width: 24ch;
   }
   .text-1 {
-    top: 11%;
+    top: 6%;
     left: 38%;
     text-align: right;
     margin: 0;
@@ -266,7 +266,7 @@ h1 bold {
 
   .text-2 {
     top: calc(
-      (0.2 * 33%) + 30%
+      (0.2 * 33%) + 22%
     );
     left: -50%;
   }
@@ -281,7 +281,7 @@ h1 bold {
 
   .text-4 {
     top: calc(
-      (0.2 * 40%) + 50%
+      (0.2 * 40%) + 56%
     );
     left: 60%;
     text-align: right;
