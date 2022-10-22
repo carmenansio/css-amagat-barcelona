@@ -4,7 +4,6 @@
 
 ### Created with CodeSandbox
 
-Sandbox [Deploy](https://2xtqvx.csb.app/)
 Vercel [Docu](https://parceljs.org/getting-started/webapp/)
 
 ### TO DO
@@ -27,4 +26,4 @@ Vercel [Docu](https://parceljs.org/getting-started/webapp/)
 - pen.new
 - Cmd + Shift + P
 
-Landing [CSS amagat a Barcelona](https://bit.ly/barcelona-css)
+Landing [CSS amagat a Barcelona](https://bit.ly/css-amagat)
