@@ -3,7 +3,7 @@
 :root {
   color-scheme: light
     dark;
-  --andalusian: #9df74d;
+  --codely: #9df74d;
   /* 12.75-13.33px */
   --step--1: clamp(
     0.83rem,
@@ -121,7 +121,7 @@ body {
 
 .border {
   background-color: var(
-    --andalusian
+    --codely
   );
   height: 60px;
 }
