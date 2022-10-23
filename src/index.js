@@ -141,7 +141,10 @@ ScrollTrigger.create({
   scrub: true,
   start: 'top 50%',
   end: 'bottom center',
-  //markers: {startColor: "yellow", endColor: "yellow"},
+  // markers: {
+  //   startColor: 'yellow',
+  //   endColor: 'yellow',
+  // },
   fastScrollEnd: true,
   onEnter: () =>
     gsap.to(

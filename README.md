@@ -4,7 +4,7 @@
 
 ### Created with CodeSandbox
 
-Vercel [Docu](https://parceljs.org/getting-started/webapp/)
+Parcel [Docu](https://parceljs.org/getting-started/webapp/)
 
 ### TO DO
 - [x] Propietat CSS i edificis

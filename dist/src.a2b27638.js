@@ -7060,7 +7060,10 @@ _ScrollTrigger.ScrollTrigger.create({
   scrub: true,
   start: 'top 50%',
   end: 'bottom center',
-  //markers: {startColor: "yellow", endColor: "yellow"},
+  // markers: {
+  //   startColor: 'yellow',
+  //   endColor: 'yellow',
+  // },
   fastScrollEnd: true,
   onEnter: function onEnter() {
     return _gsapTrial.default.to(['#sagrada-fill'], {
